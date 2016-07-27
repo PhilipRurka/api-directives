@@ -1,0 +1,26 @@
+
+.header-section {
+   height: 10em;
+   background-color: $color-header;
+
+   .header-container {
+
+      ul {
+         padding-top: 4em;
+         list-style: none;
+         text-align: center;
+
+         .item {
+            padding: 0;
+
+            a {
+               text-decoration: none;
+            }
+
+            button {
+
+            }
+         }
+      }
+   }
+}
