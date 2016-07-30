@@ -8,5 +8,4 @@ angular.module('ApiTesting')
    weather.getPostCode(postCode);
 
    console.log(weather.currently);
-   });
 });
