@@ -2,10 +2,11 @@
 
 angular.module('ApiTesting')
 .controller('apiCtrl', function($scope){
-   $scope.list;
-   var postCode = e3b7g8
-   $https.jsonp('https://maps.googleapis.com/maps/api/geocode/json?address=' + postCode + '?callback=JSON_CALLBACK').then(function(data){
-      $scope.list = data.data;
+
+   var weather =  require('../ api/weather.js');
+   var postCode = process.argv.slice(2);
+   weather.getPostCode(postCode);
+
+   console.log(weather.currently);
    });
 });
-;
