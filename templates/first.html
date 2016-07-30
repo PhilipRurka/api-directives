@@ -1,5 +1,7 @@
 <div class="first" ng-controller='apiCtrl'>
    <span>FIRST</span>
+   <input ng-model='val' type="text" name="postal-code" value="Enter Postal Code Here">
+   <button ng-click='getPostCode($scope.postCode)' type="button" name="submite-postal-code"></button>
    <ul class weather-items>
       <li class="item"></li>
    </ul>
