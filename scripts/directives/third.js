@@ -1,6 +1,6 @@
 
 angular.module('ContentPlugin')
-.directive('second', function() {
+.directive('third', function() {
    return {
         templateUrl: 'templates/second.html',
         controller: 'contentCtrl',
