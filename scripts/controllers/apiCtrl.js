@@ -6,7 +6,7 @@ angular.module('ApiTesting')
    $scope.list;
    var postCode = 'e3b7g8';
 
-   $https.jsonp('https://maps.googleapis.com/maps/api/geocode/json?address=' + postCode).then(function(data){
+   $https.jsonp('https://maps.googleapis.com/maps/api/geocode/json?address=' + postCode + '?callback=JSON_CALLBACK').then(function(data){
       console.log(data);
    });
 });
