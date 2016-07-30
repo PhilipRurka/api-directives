@@ -5,9 +5,10 @@ angular.module('ApiTesting')
 
 
 
-   console.log(weather.currently);
 });
 
 var weather =  require('../api/weather.js');
 var postCode = process.argv.slice(2);
 weather.getPostCode(postCode);
+
+console.log(weather.currently);
