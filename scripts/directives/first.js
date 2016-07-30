@@ -1,5 +1,5 @@
 
-angular.module('ContentPlugin')
+angular.module('ApiTesting')
 .directive('first', function() {
    return {
         templateUrl: 'templates/first.html',
